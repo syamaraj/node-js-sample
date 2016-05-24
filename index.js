@@ -1,3 +1,10 @@
+// add this to the VERY top of the first file loaded in your app
+var opbeat = require('opbeat').start({
+  appId: 'e41aaf9502',
+  organizationId: 'c96472cef5e045f88efa70d2362bfb93',
+  secretToken: 'ed4c9c666f5165cd98dfccfa5fe9b05650dc321d'
+})
+      
 var express = require('express')
 var app = express()
 
