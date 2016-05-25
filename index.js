@@ -4,6 +4,8 @@ var opbeat = require('opbeat').start({
   organizationId: 'c96472cef5e045f88efa70d2362bfb93',
   secretToken: 'ed4c9c666f5165cd98dfccfa5fe9b05650dc321d'
 })
+      
+opbeat.captureError(new Error('Ups again, something broke again'))
 
 var express = require('express')
 var app = express()
