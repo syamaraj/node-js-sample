@@ -5,7 +5,7 @@ var opbeat = require('opbeat').start({
   secretToken: 'ed4c9c666f5165cd98dfccfa5fe9b05650dc321d'
 })
       
-opbeat.captureError(new Error('Ups, something broke'))
+opbeat.captureError(new Error('Ups again, something broke again'))
 
 var express = require('express')
 var app = express()
