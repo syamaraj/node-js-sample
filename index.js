@@ -7,8 +7,6 @@ var opbeat = require('opbeat').start({
       
 opbeat.captureError(new Error('Ups again, something broke again'))
 
-throw err
-
 var express = require('express')
 var app = express()
 
